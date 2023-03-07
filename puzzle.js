@@ -15,18 +15,19 @@ const textArray = ["Le cerf de Virginie pait dans les clairières, mais se réfu
 let text = textArray[modeID]
 
 function changeImage(id) {
-    alert("hi")
     switch (id) {
         case 1:
             mode = "cerfs";
             modeID = 0;
             baseimg.src = "images/cerfsbase.jpg"
+            alert('1')
             location.reload();
             break;
         case 2:
             mode = "mouette";
             modeID = 1;
             baseimg.src = "images/mouettebase.jpg"
+            alert('2')
             location.reload();
             break;
     }
