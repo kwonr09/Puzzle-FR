@@ -6,6 +6,8 @@ let otherTile;
 
 let turns = 0;
 
+let mode = "cerfs"
+
 const shuffleArray = array => { // function to shuffle arrays
     for (let i = array.length - 1; i > 0; i--) {
       const j = Math.floor(Math.random() * (i + 1));
@@ -46,7 +48,7 @@ window.addEventListener('load', (event) =>{
     for (let i = 0; i < pieces.length; i++) {
         // img tile creatiom
         let tile = document.createElement("img")
-        tile.src = "./images/" + pieces[i] + ".jpg";    
+        tile.src = "./images/" + mode + pieces[i] + ".jpg";    
         //DRAG FUNCTIONALITY
         tile.addEventListener("dragstart", dragStart); //click on image to drag
         tile.addEventListener("dragover", dragOver);   //drag an image
