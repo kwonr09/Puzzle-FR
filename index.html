@@ -10,8 +10,16 @@
 
     <body>
         <br>
+        <h2>Les Grands Lacs - Puzzle</h2>
+        <h3>Lorsque vous completez le puzzle, cliquez sur le bouton rouge pour révéler le fait intéressant.</h3>
+        <button class="button" onclick="alert(text);">J'ai fini</button>
+        <div>
+            <button class="choice" onclick="changeImage(1);">1</button>
+            <button class="choice" onclick="changeImage(2);">2</button>
+            <button class="choice" onclick="changeImage(3);">3</button>
+        </div>
         <div id="board"></div>
-        <img id="baseimg" src="images/cerfsbase.jpg" alt="Base img" width="250" height="250" vspace="8">
+        <img id="baseimg" src="images/cerfsbase.jpg" alt="Base img" height="250" width="250" vspace="8">
         <div id="pieces"></div>
     </body>
 </html>
