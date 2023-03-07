@@ -6,30 +6,13 @@ let otherTile;
 
 let turns = 0;
 
-let mode = "cerfs" //id: 0
-let modeID = 0
+let mode = "mouette" //id: 0
+let modeID = 1
 
 const textArray = ["Le cerf de Virginie pait dans les clairières, mais se réfugie dans les taillis pour semer plus facilement les loups et les autres prédateurs.",
 "Les mouettes sont petites et délicates; la mouette de Bonaparte devient adulte à deux ans et hiverne sur la côte occidentale du Mexique."]
 
 let text = textArray[modeID]
-
-const base = document.getElementById('baseimg')
-
-function changeImage(id) {
-    switch (id) {
-        case 1:
-            mode = "cerfs"; //id: 0
-            modeID = 0;
-                      
-            break;
-        case 2:
-            mode = "mouette"; //id: 1
-            modeID = 1;
-            base.src = "images/mouettebase.jpg"
-            break;
-    }
-}
 
 const shuffleArray = array => { // function to shuffle arrays
     for (let i = array.length - 1; i > 0; i--) {
